@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "bbfeb77c-b729-4e49-ab1f-6b7b235b20e3",
+		"name": "Helper",
+		"description": "Contains everything needed to run the tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2db65ca5-4bd5-4707-a37e-43805380bd16",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{grant_type: \"password\", username: \"Superuser@8tech.com\", password: \"TestPassword123!\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://showroomtestapi.dealerweb.app/api/user/connect",
+					"host": [
+						"https://showroomtestapi.dealerweb.app"
+					],
+					"path": [
+						"api",
+						"user",
+						"connect"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
